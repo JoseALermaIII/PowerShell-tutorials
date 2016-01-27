@@ -1,6 +1,7 @@
 ## loops.ps1
 ## Examples of loops in PS
 ##
+## Author:   J. Lerma
 ## Date:     December 7, 2015
 ##
 ## Do-While
