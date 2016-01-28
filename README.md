@@ -7,11 +7,5 @@ My idea was that if I can do progressively difficult algorithms written in Power
 
 So far, so good.
 
-# External Links
-General info:
-
-https://en.wikipedia.org/wiki/Windows_PowerShell
-
-Detailed info:
-
-https://technet.microsoft.com/en-us/library/bb978526.aspx
+# License
+Distributed under the MIT License.
