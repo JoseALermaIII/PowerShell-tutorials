@@ -10,7 +10,6 @@
 $int_power = 0
 $var_a = 0
 $int_array = 0,0
-$int_array2 = 0,0
 
 ### FUNCTIONS
 function pow ([int]$base,[int]$power)
@@ -67,14 +66,12 @@ function pow ([int]$base,[int]$power)
 ### MAIN
 
 $int_power = read-host "To what power are we calculating?"
-$int_array = read-host "What numbers are we operating on?"
 
-while ($var_a -lt $int_array.length)
-{
-    $int_array2[$var_a] = $int_array[$var_a]
-}
+# There's a method for that. Split method breaks up string at comma.
+# Trim method removes all leading and trailing white-space. Neat.
+$int_array = (read-host "What numbers are we operating on? (separate with commas)").split(",").trim() 
 
-foreach ($var_a in $int_array2)
+foreach ($var_a in $int_array)
 {
     pow $var_a $int_power
 }
