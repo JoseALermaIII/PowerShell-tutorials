@@ -12,7 +12,7 @@ $var_a = 0
 $int_array = 0,0
 
 ### FUNCTIONS
-function pow ([int]$base,[int]$power)
+function Get-Power ([int]$base,[int]$power)
     {
         $int_a = 0
         $int_b = 1
@@ -73,5 +73,5 @@ $int_array = (read-host "What numbers are we operating on? (separate with commas
 
 foreach ($var_a in $int_array)
 {
-    pow $var_a $int_power
+    Get-Power $var_a $int_power
 }
