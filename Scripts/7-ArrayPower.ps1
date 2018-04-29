@@ -41,21 +41,21 @@ function Get-Power ([int]$base,[int]$power)
             If float is used, it will be rounded up to nearest integer.
 
             .INPUTS
-            None. You cannot pipe objects to pow.
+            None. You cannot pipe objects to Get-Power.
 
             .OUTPUTS
-            System.Integer. pow returns an integer result of base to given power.
+            System.Integer. Get-Power returns an integer result of base to given power.
 
             .EXAMPLE
-            C:\PS> pow 3 2
+            C:\PS> Get-Power 3 2
             9
 
             .EXAMPLE
-            C:\PS> pow -base 4 -power 1
+            C:\PS> Get-Power -base 4 -power 1
             4
             
             .EXAMPLE
-            C:\PS> pow 2 0
+            C:\PS> Get-Power 2 0
             1
 
             .LINK
