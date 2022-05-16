@@ -4,13 +4,13 @@
 ## Author:   J. Lerma
 ## Date:     December 9, 2015
 ##
-$input = "an abba blah blah"
+$input_string = "an abba blah blah"
 $var_a = 0
 $var_b = 0
 
-while ($var_a -lt $input.length)
+while ($var_a -lt $input_string.length)
 {
-    if ($input[$var_a] -eq "a")
+    if ($input_string[$var_a] -eq "a")
     {
         $var_b++
     }
