@@ -24,16 +24,16 @@ function Get-CmdletAlias ($cmdletname)
 # TODO: Add an Add-PsSnapin function to add any Powershell snap-ins that are used.
 
 # Function to customize console.
-function Color-Console
+function Set-ConsoleColor
 {
     $host.ui.rawui.backgroundcolor = "white"
     $host.ui.rawui.foregroundcolor = "black"
-        $hosttime = (dir $pshome\powershell.exe).creationtime
+        $hosttime = (Get-ChildItem $pshome\powershell.exe).creationtime
         $Host.UI.RawUI.WindowTitle = "Windows Powershell $hostversion ($hosttime)"
         
         clear-host
 }
-Color-console
+Set-ConsoleColor
 
 # Function to add custom PowerShell prompt with
 #  computer name and working directory
