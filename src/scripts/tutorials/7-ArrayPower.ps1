@@ -65,11 +65,11 @@ function Get-Power ([int]$base,[int]$power)
 
 ### MAIN
 
-$int_power = read-host "To what power are we calculating?"
+$int_power = Read-Host -Prompt "To what power are we calculating?"
 
 # There's a method for that. Split method breaks up string at comma.
 # Trim method removes all leading and trailing white-space. Neat.
-$int_array = (read-host "What numbers are we operating on? (separate with commas)").split(",").trim() 
+$int_array = (Read-Host -Prompt "What numbers are we operating on? (separate with commas)").split(",").trim() 
 
 foreach ($var_a in $int_array)
 {
