@@ -18,7 +18,7 @@ function Get-CHM
 # Function to list aliases for cmdlets
 function Get-CmdletAlias ($cmdletname)
 {
-    get-alias | Where-Object {$_.definition -like "*$cmdletname*"} | ft Definition, Name -auto
+    get-alias | Where-Object {$_.definition -like "*$cmdletname*"} | Format-Table Definition, Name -auto
 }
 
 # TODO: Add an Add-PsSnapin function to add any Powershell snap-ins that are used.
