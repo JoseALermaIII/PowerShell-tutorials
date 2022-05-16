@@ -8,7 +8,7 @@
 ## Note: Function contains CLI help info.
 ##
 ### VARIABLES
-$input = 1
+$input_integer = 1
 
 ### FUNCTIONS
 function pow ([int]$base,[int]$power)
@@ -63,9 +63,9 @@ function pow ([int]$base,[int]$power)
     }
 
 ### MAIN
-$input = read-host "What number will we power of by 2?"
+$input_integer = Read-Host -Prompt "What number will we power of by 2?"
 
 # Data from read-host is stored as a string
-[int]$input * [int]$input
+[int]$input_integer * [int]$input_integer
 
-pow $input 2
+pow $input_integer 2
