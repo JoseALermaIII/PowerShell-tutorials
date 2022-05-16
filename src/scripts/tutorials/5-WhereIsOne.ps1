@@ -4,10 +4,10 @@
 ## Author:   J. Lerma
 ## Date:     December 12, 2015
 ##
-$input = 0,2,3,1
+$input_array = 0,2,3,1
 $var_b = 0
 
-foreach ($var_a in $input)
+foreach ($var_a in $input_array)
 {
     if ($var_a -eq "1")
     {
