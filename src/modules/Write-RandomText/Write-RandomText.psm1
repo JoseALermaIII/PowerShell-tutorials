@@ -1,4 +1,4 @@
-## Write-RandomText.ps1
+## Write-RandomText.psm1
 ## Creates files of an estimated size
 ## using GeneratePassword to create dummy text.
 ##
