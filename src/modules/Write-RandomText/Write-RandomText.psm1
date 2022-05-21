@@ -6,7 +6,7 @@
 function Write-RandomText {
 <#
 .SYNOPSIS 
-Generates dummy text file of given size.
+Generates a pseudo-random dummy text file of given size.
 
 .DESCRIPTION
 Generates dummy text file of a given size with the given filename.
