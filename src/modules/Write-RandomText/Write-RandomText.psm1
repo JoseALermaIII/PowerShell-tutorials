@@ -10,7 +10,7 @@ Generates a pseudo-random dummy text file of given size.
 
 .DESCRIPTION
 Generates dummy text file of a given size with the given filename.
-Uses System.Web.Security.Membership.GeneratePassword method to make 256 byte
+Uses System.Web.Security.Membership.GeneratePassword method to make 128 byte
 lines. Multiplying the desired filesize in MiB by 1024*1024, then dividing
 by the number of bytes per line produces the number of iterations for a MiB.
 
@@ -53,14 +53,14 @@ Date: May 07, 2022
         [string]$Filename='RandTextOut.txt'
     )
     $Filesize *= 1024 * 1024
-    $Count = $Filesize / 256
+    $Count = $Filesize / 128
     Write-Verbose -Message "Iterations for ${Filesize}: $Count"
 
     $Output = for ($i=1; $i -le $Count; $i++) {
-        [System.Web.Security.Membership]::GeneratePassword(125, 0)
+        [System.Web.Security.Membership]::GeneratePassword(128, 0)
     }
     $CharCount=$Output.Length
     Write-Verbose -Message "Output to file: $CharCount"
-    Out-File -FilePath .\$Filename -InputObject $Output
+    Out-File -NoNewline -Encoding ASCII -FilePath .\$Filename -InputObject $Output
     return
 }
