@@ -1,5 +1,5 @@
 ## Write-ByteText.psm1
-## Creates files of an estimated size
+## Creates files of a specific size
 ## by writing periods to create dummy text.
 ##
 ### FUNCTIONS

@@ -1,6 +1,6 @@
 ## Write-RandomText.psm1
-## Creates files of an estimated size
-## using GeneratePassword to create dummy text.
+## Creates files of a specific size
+## using GeneratePassword to create pseudo-random dummy text.
 ##
 ### FUNCTIONS
 function Write-RandomText {
